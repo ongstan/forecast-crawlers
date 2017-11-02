@@ -12,3 +12,11 @@ class CrawlersItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     pass
+
+class NewsItem(scrapy.Item):
+    title = scrapy.Field()
+    date = scrapy.Field()
+    classification = scrapy.Field()
+    content = scrapy.Field()
+    source = scrapy.Field()
+    url = scrapy.Field()

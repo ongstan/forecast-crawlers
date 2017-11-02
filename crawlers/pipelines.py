@@ -8,4 +8,11 @@
 
 class CrawlersPipeline(object):
     def process_item(self, item, spider):
+        print("获取到数据，正在处理")
+        with open("data","a") as f:
+            t = [i for i in item.values()]
+            f.write(''.join(t))
+            f.write("\n")
+            print("成功g--------------------------------------")
+
         return item
